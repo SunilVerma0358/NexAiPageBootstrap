@@ -1,0 +1,994 @@
+@import url('./root.css');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* font-family */
+
+@font-face {
+    font-family: "Recharge";
+    src: url(../font/recharge\ bd.otf);
+}
+
+@font-face {
+    font-family: "Neuropolitical";
+    src: url(../font/neuropolitical\ rg.otf);
+}
+
+.ff-Recharge {
+    font-family: "Recharge";
+}
+
+.ff-Neuropolitical {
+    font-family: "Neuropolitical";
+}
+
+
+/* preloader */
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+#preloder {
+    z-index: 5;
+}
+
+.ciclre {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border-top: 5px solid var(--text-blue);
+    border-bottom: 5px solid var(--text-blue);
+    border-left: 5px solid var(--text-white);
+    border-right: 5px solid var(--text-white);
+    animation: preloder_one 2s linear infinite;
+}
+
+@keyframes preloder_one {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* back to top */
+
+.d_none {
+    display: none;
+}
+
+.back {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.back_top_btn {
+    position: fixed;
+    padding: 6px;
+    bottom: 10px;
+    right: 10px;
+    color: var(--text-white);
+    border: 1px solid transparent;
+    background-color: var(--text-blue);
+    border-radius: 50px;
+    transition: all linear 0.3s !important;
+}
+
+.back_top_btn:hover {
+    color: var(--text-white);
+    animation: pulse 1s linear;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 #02CDCF;
+    }
+}
+
+
+/* line-height */
+
+.lh_19 {
+    line-height: 19px;
+}
+
+.lh_21 {
+    line-height: 21px;
+}
+
+.lh_24 {
+    line-height: 21px;
+}
+
+.lh_25 {
+    line-height: 22px;
+}
+
+.lh_32 {
+    line-height: 26px;
+}
+
+.lh_50 {
+    line-height: 36.9px;
+}
+
+.lh_51 {
+    line-height: 38.2px;
+}
+
+.lh_90 {
+    line-height: 90px;
+}
+
+
+/* flex property */
+
+.flex_grow {
+    flex-grow: 1;
+}
+
+
+/* max-width and height */
+
+.blockChainmax_w_212 {
+    max-width: 212px;
+}
+
+.max_w_356 {
+    max-width: 356px;
+}
+
+.max_w_397 {
+    max-width: 397px;
+}
+
+.max_w_900 {
+    max-width: 700px;
+}
+
+.max_w_1140 {
+    max-width: 1140px !important;
+}
+
+.max_w_1340 {
+    max-width: 1340px;
+}
+
+.max_w_517 {
+    max-width: 517px;
+}
+
+.max_w_612 {
+    max-width: 612px;
+}
+
+.max_w_664 {
+    max-width: 664px;
+}
+
+.max_w_684 {
+    max-width: 684px;
+}
+
+.blockChainmax_w_997 {
+    max-width: 997px;
+}
+
+.AndMore_w_912 {
+    max-width: 912px;
+}
+
+.AndMore_card_width {
+    max-width: 270px;
+}
+
+.max_h_500 {
+    max-height: 500px;
+}
+
+.min_vh_80 {
+    min-height: 570px;
+}
+
+.height_810 {
+    min-height: 810px;
+}
+
+.h_270 {
+    height: 200px
+}
+
+.h_150 {
+    height: 150px
+}
+
+
+/* padding class */
+
+.pt_12 {
+    padding-top: 12px;
+}
+
+.pt_20 {
+    padding-top: 20px;
+}
+
+.pt_30 {
+    padding-top: 24px;
+}
+
+.py_6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.py_3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.px_3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.py_20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pb_28 {
+    padding-bottom: 28px;
+}
+
+.pb_30 {
+    padding-bottom: 30px;
+}
+
+.pt_nav {
+    padding-top: 31px;
+}
+
+.mt_40 {
+    margin-top: 24px !important;
+}
+
+.mt_24 {
+    margin-top: 111px !important;
+}
+
+
+/* border and rounded */
+
+
+/* common-btn */
+
+.common_btn {
+    border: none;
+    line-height: 21.6px;
+    background-color: var(--text-blue);
+    padding: 14px 24px;
+    transition: all linear 300ms;
+    border-radius: 12px;
+}
+
+.common_btn:hover {
+    color: var(--text-white);
+    animation: pulsegardiant 1s linear;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+@keyframes pulsegardiant {
+    0% {
+        box-shadow: 0 0 #02CDCF;
+    }
+}
+
+
+/*---------------- herosection---------------- */
+
+.bg_img {
+    background-image: url(/assets/image/HerosmallImg.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.nav_link {
+    transition: all linear 300ms;
+    border: 1px solid transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.nav_link:hover {
+    border-top: 1px solid var(--text-blue);
+    border-bottom: 1px solid var(--text-blue);
+    color: var(--text-blue);
+    border-radius: 1px;
+}
+
+.crossLine1 {
+    transition: all linear 200ms;
+    rotate: 48deg;
+    transform: translateX(10px) translateY(8px);
+    background-color: var(--text-blue) !important;
+}
+
+.crossLine2 {
+    transition: all linear 200ms;
+    rotate: 123deg;
+    transform: translateX(-2px);
+    background-color: var(--text-blue) !important;
+}
+
+
+/* features section */
+
+.features_card {
+    border-radius: 16px;
+    max-width: 364px;
+    cursor: pointer;
+    padding: 24px;
+    background-color: var(--text-white);
+    transition: all linear 300ms;
+}
+
+.featuresHeading {
+    transition: all linear 300ms;
+}
+
+.features_card:hover .featuresHeading {
+    color: var(--text-blue)
+}
+
+.features path {
+    transition: all linear 300ms;
+}
+
+.features_card:hover .features path {
+    fill: var(--text-blue);
+}
+
+.featuresStroke {
+    transition: all linear 300ms;
+}
+
+.features_card:hover .features {
+    stroke: var(--text-blue);
+}
+
+.bg_features_img {
+    background-image: url(/assets/image/FeaturesBg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    border: 1px solid #fcfcfc
+}
+
+
+/* blockchain */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.BlockChain_img {
+    max-width: 40px;
+    z-index: -1;
+    right: 0;
+}
+
+.max_w_blockChain {
+    max-width: 1200px;
+}
+
+.blockChaingMaxwidth {
+    max-width: 300px;
+}
+
+.blockChainCircle {
+    box-shadow: 0 4px 16px 0#02CDCF99 inset;
+    width: 58px;
+    height: 58px;
+    border-radius: 58px;
+    background-color: #040404;
+}
+
+.BlockNumberHover {
+    transition: all linear 300ms;
+}
+
+.blockChaingMaxwidth:hover.BlockNumberHover {
+    color: var(--text-blue);
+}
+
+
+/* nexai section */
+
+.bg_Nexai_img {
+    background-image: url(/assets/image/NextAiBg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    border: 1px solid #fcfcfc
+}
+
+
+/* Andmore section */
+
+.AndmoreCard {
+    box-shadow: 0px 4px 20px 0px#02CDCF29;
+    border-radius: 16px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    transition: all linear 300ms;
+}
+
+.AndmoreCardPadding {
+    padding: 72px 43px;
+}
+
+.AndmoreCardPadding2 {
+    padding: 55px 30px;
+}
+
+.AndmoreCardPadding3 {
+    padding: 55px 30px;
+}
+
+.AndmoreCardHeading {
+    transition: all linear 300ms;
+}
+
+.AndmoreCard:hover .AndmoreCardHeading {
+    color: var(--text-blue);
+}
+
+.AndMore_lh {
+    line-height: 28px;
+}
+
+.Token {
+    position: relative;
+}
+
+.Token::before {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    background-color: var(--text-white);
+    z-index: 1;
+}
+
+
+/* footer */
+
+.footer_bg {
+    background-image: url(/assets/image/FooterBg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* slider-code */
+
+.slick-slide {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+}
+
+.slick-track {
+    display: inline-flex !important;
+}
+
+.overflow_hidden::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* nav_icon */
+
+.fixed1 {
+    display: none !important;
+}
+
+.fixed2 {
+    transform: rotate(50deg) translate(-1px, 10px);
+    width: 40px !important;
+}
+
+.fixed3 {
+    transform: rotate(-50deg) translate(-3px, -10px);
+    width: 40px !important;
+}
+
+
+/* ellipse */
+
+.bg_layer {
+    background-image: linear-gradient(180deg, #040404 24.07%, rgba(4, 4, 4, 0) 96.3%);
+    height: 80px;
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    filter: blur(20px);
+}
+
+.bg_left {
+    background-color: var(--text-blue);
+    width: 120px;
+    height: 100px;
+    filter: blur(90px);
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    z-index: 0;
+}
+
+.powered_img_ellpise {
+    background-color: var(--text-blue);
+    width: 200px;
+    height: 140px;
+    filter: blur(160px);
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.powered_img_ellpise_left {
+    background-color: var(--text-blue);
+    width: 180px;
+    height: 140px;
+    filter: blur(240px);
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    z-index: -1;
+}
+
+.featuresLeftEllipse {
+    z-index: -1;
+    filter: blur(220px);
+    height: 262px;
+    width: 262px;
+    border-radius: 100px;
+    background: var(--text-blue);
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+}
+
+.featuresRightEllipse {
+    z-index: -1;
+    filter: blur(220px);
+    height: 262px;
+    width: 262px;
+    border-radius: 100px;
+    background: var(--text-blue);
+    position: absolute;
+    right: -25%;
+    top: 2%;
+}
+
+.BlockChain_img_ellpise {
+    background-color: var(--text-blue);
+    width: 180px;
+    height: 160px;
+    filter: blur(190px);
+    position: absolute;
+    top: 30%;
+    right: -10%;
+    z-index: -1;
+}
+
+.BlockChain_img_ellpiseLeft {
+    background-color: var(--text-blue);
+    width: 228px;
+    height: 140px;
+    filter: blur(190px);
+    position: absolute;
+    top: 25%;
+    left: -6%;
+    z-index: -1;
+}
+
+.NexAiMainImgEllipse {
+    filter: blur(276px);
+    height: 350px;
+    max-width: 468px;
+    border-radius: 500px;
+    background: var(--text-blue);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    mix-blend-mode: hard-light;
+}
+
+.NexAiLeftEllipse {
+    z-index: -1;
+    filter: blur(200px);
+    height: 160px;
+    width: 228px;
+    border-radius: 100px;
+    background: var(--text-blue);
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+}
+
+.NexAiRightEllipse {
+    z-index: -1;
+    filter: blur(180px);
+    height: 140px;
+    width: 190px;
+    border-radius: 100px;
+    background: var(--text-blue);
+    position: absolute;
+    right: -10%;
+    top: 40%;
+}
+
+.AndMore_img {
+    max-width: 40px;
+    z-index: -1;
+}
+
+.AndMore_Right_ellpise {
+    width: 140px;
+    height: 160px;
+    right: 0;
+    top: 0;
+    filter: blur(130px);
+    z-index: -1;
+    background: var(--text-blue);
+}
+
+.TokenLeftTopEllipse {
+    background-color: var(--text-blue);
+    width: 228px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    top: 7%;
+    filter: blur(158px);
+    z-index: 0;
+}
+
+.TokenLeftEllipse {
+    background-color: var(--text-blue);
+    width: 228px;
+    height: 140px;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    filter: blur(158px);
+    z-index: -1;
+}
+
+.TokenRightEllipse {
+    background-color: var(--text-blue);
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    Right: 0;
+    top: 35%;
+    filter: blur(180px);
+    z-index: -1;
+}
+
+.TokenRightBottomEllipse {
+    background-color: var(--text-blue);
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    filter: blur(180px);
+    z-index: -2;
+}
+
+.border_t_2 {
+    border-top: 2px solid #676D6D;
+}
+
+.group {
+    transition: all linear 300ms;
+}
+
+.group:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ----------media quary---------- */
+
+@media (max-width:767.9px) {
+    .icon {
+        width: 24px;
+        height: 24px;
+        z-index: 4;
+    }
+    .icon span {
+        width: 100%;
+        height: 4px;
+        margin-top: 5px;
+        border-radius: 2px;
+        transition: all linear 0.3s !important;
+        background-color: var(--text-blue);
+    }
+    .my_nav {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--text-black);
+        top: 0;
+        right: -100%;
+        justify-content: center;
+        transition: all 400ms linear;
+        z-index: 2;
+        padding: 12px 0px;
+    }
+    .show {
+        right: 0%;
+    }
+}
+
+@media (max-width:1023.9px) {
+    .overflow {
+        overflow: hidden;
+    }
+}
+
+@media (min-width:575.9px) {
+    .BlockChain_img_ellpiseLeft {
+        height: 160px;
+    }
+    .BlockChain_img_ellpise {
+        width: 228px;
+        height: 160px;
+        filter: blur(190px);
+    }
+    .NexAiMainImgEllipse {
+        height: 463px;
+    }
+    .NexAiRightEllipse {
+        filter: blur(200px);
+        height: 160px;
+        width: 228px;
+    }
+    .mt_40 {
+        margin-top: 40px !important;
+    }
+    .pt_30 {
+        padding-top: 30px;
+    }
+    /*--------------------- line-height--------------------- */
+    .lh_24 {
+        line-height: 24px;
+    }
+    .lh_25 {
+        line-height: 25px;
+    }
+    .lh_32 {
+        line-height: 32px;
+    }
+    .lh_50 {
+        line-height: 42.9px;
+    }
+    .lh_51 {
+        line-height: 44.2px;
+    }
+    .lh_75 {
+        line-height: 50px;
+    }
+    .AndMore_lh {
+        line-height: 34px;
+    }
+    .blockChaingMaxwidth {
+        max-width: 340px;
+    }
+    .BlockChain_img {
+        max-width: 60px;
+        z-index: -1;
+        right: 0;
+    }
+    .AndMore_img {
+        max-width: 60px;
+        z-index: -1;
+    }
+    .bg_layer {
+        height: 106px;
+        bottom: -10%;
+    }
+    .bg_left {
+        background-color: var(--text-blue);
+        width: 260px;
+        height: 202px;
+        filter: blur(220px);
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        z-index: 0;
+    }
+    .powered_img_ellpise {
+        background-color: var(--text-blue);
+        width: 228px;
+        height: 160px;
+        filter: blur(140px);
+        position: absolute;
+        top: 40%;
+        right: 20%;
+    }
+    .powered_img_ellpise_left {
+        background-color: var(--text-blue);
+        width: 200px;
+        height: 150px;
+        filter: blur(200px);
+        position: absolute;
+        top: 40%;
+        right: -10%;
+        z-index: -1;
+    }
+    .features_card {
+        padding: 30px 24px 56px 24px;
+    }
+}
+
+@media (min-width:767.9px) {
+    /* line-height */
+    .lh_50 {
+        line-height: 50.9px;
+    }
+    .lh_51 {
+        line-height: 51.2px;
+    }
+    .AndMore_lh {
+        line-height: 38px;
+    }
+    .common_btn {
+        padding: 18px 32px;
+    }
+    .bg_img {
+        background-image: url(../image/HeroMainImg.webp);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .footer_bg {
+        background-size: 100% 100%;
+    }
+    .min_vh_80 {
+        min-height: 810px;
+    }
+    .pt_40 {
+        padding-top: 40px;
+    }
+    .px_30 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .ps_48 {
+        padding-left: 55px;
+    }
+    .h_270 {
+        height: 200px
+    }
+    .powered_img_ellpise_left {
+        width: 228px;
+        height: 160px;
+        filter: blur(140px);
+    }
+}
+
+@media (min-width:991.9px) {
+    .pe_38 {
+        padding-right: 38px;
+    }
+    .ps_38 {
+        padding-left: 38px;
+    }
+    .lh_75 {
+        line-height: 60px;
+    }
+    .ps_48 {
+        padding-left: 75px;
+    }
+    .max_w_900 {
+        max-width: 800px;
+    }
+}
+
+@media (min-width:1199.9px) {
+    .mr_120 {
+        margin-right: 120px !important;
+    }
+    .px_features {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+    .lh_75 {
+        line-height: 75px;
+    }
+    .ps_48 {
+        padding-left: 12px;
+    }
+    .AndmoreCardPadding2 {
+        padding: 72px 43px;
+    }
+    .max_w_900 {
+        max-width: 900px;
+    }
+}
+
+@media (min-width:1536px) {
+    .max_w_1140 {
+        max-width: 1320px !important;
+    }
+    .pt_16 {
+        padding-top: 16px !important;
+    }
+    .max_w_blockChain {
+        max-width: 1536px;
+    }
+    .vh_100 {
+        height: 100vh;
+    }
+    .AndmoreCardPadding3 {
+        padding: 72px 43px;
+    }
+}
+
+ul.roadmap {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.roadmap:before {
+    content: ' ';
+    background: var(--text-blue);
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    width: 8px;
+    border-radius: 15px;
+    height: 100%;
+    z-index: 3;
+}
+
+ul.roadmap>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.roadmap>li:before {
+    content: ' ';
+    background: var(--text-white);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    z-index: 4;
+    top: 54%;
+}
