@@ -689,7 +689,7 @@ ul.roadmap>li:before {
     left: 0;
     top: 7%;
     filter: blur(158px);
-    z-index: 0;
+    z-index: 1;
 }
 
 .TokenLeftEllipse {
@@ -972,7 +972,7 @@ ul.roadmap>li:before {
         height: 100vh;
     }
     .AndmoreCardPadding3 {
-        padding: 72px 43px;
+        padding: 55px 43px;
     }
     .pt_48 {
         padding-top: 48px !important;
