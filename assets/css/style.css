@@ -267,9 +267,6 @@
 }
 
 
-/* border and rounded */
-
-
 /* common-btn */
 
 .common_btn {
@@ -359,11 +356,11 @@
     fill: var(--text-blue);
 }
 
-.featuresStroke {
+.featuresStroke path {
     transition: all linear 300ms;
 }
 
-.features_card:hover .features {
+.features_card:hover .featuresStroke path {
     stroke: var(--text-blue);
 }
 
@@ -377,7 +374,7 @@
 }
 
 
-/* blockchain */
+/* -----------blockchain----------- */
 
 .cursor-pointer {
     cursor: pointer;
@@ -409,12 +406,12 @@
     transition: all linear 300ms;
 }
 
-.blockChaingMaxwidth:hover.BlockNumberHover {
+.blockChaingMaxwidth:hover .BlockNumberHover {
     color: var(--text-blue);
 }
 
 
-/* nexai section */
+/* -------------nexai section------------- */
 
 .bg_Nexai_img {
     background-image: url(/assets/image/NextAiBg.webp);
@@ -426,7 +423,7 @@
 }
 
 
-/* Andmore section */
+/* --------------Andmore section-------------- */
 
 .AndmoreCard {
     box-shadow: 0px 4px 20px 0px#02CDCF29;
@@ -460,6 +457,9 @@
     line-height: 28px;
 }
 
+
+/* -----------------Token-section----------------- */
+
 .Token {
     position: relative;
 }
@@ -473,8 +473,43 @@
     z-index: 1;
 }
 
+ul.roadmap {
+    list-style-type: none;
+    position: relative;
+}
 
-/* footer */
+ul.roadmap:before {
+    content: ' ';
+    background: var(--text-blue);
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    width: 8px;
+    border-radius: 15px;
+    height: 100%;
+    z-index: 3;
+}
+
+ul.roadmap>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.roadmap>li:before {
+    content: ' ';
+    background: var(--text-white);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    z-index: 4;
+    top: 54%;
+}
+
+
+/* ----------------footer---------------- */
 
 .footer_bg {
     background-image: url(/assets/image/FooterBg.webp);
@@ -484,7 +519,7 @@
 }
 
 
-/* slider-code */
+/* -----------------slider-code----------------- */
 
 .slick-slide {
     margin-left: 12px !important;
@@ -500,24 +535,7 @@
 }
 
 
-/* nav_icon */
-
-.fixed1 {
-    display: none !important;
-}
-
-.fixed2 {
-    transform: rotate(50deg) translate(-1px, 10px);
-    width: 40px !important;
-}
-
-.fixed3 {
-    transform: rotate(-50deg) translate(-3px, -10px);
-    width: 40px !important;
-}
-
-
-/* ellipse */
+/* -------------ellipse------------- */
 
 .bg_layer {
     background-image: linear-gradient(180deg, #040404 24.07%, rgba(4, 4, 4, 0) 96.3%);
@@ -956,39 +974,10 @@
     .AndmoreCardPadding3 {
         padding: 72px 43px;
     }
-}
-
-ul.roadmap {
-    list-style-type: none;
-    position: relative;
-}
-
-ul.roadmap:before {
-    content: ' ';
-    background: var(--text-blue);
-    display: inline-block;
-    position: absolute;
-    left: 5px;
-    width: 8px;
-    border-radius: 15px;
-    height: 100%;
-    z-index: 3;
-}
-
-ul.roadmap>li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-
-ul.roadmap>li:before {
-    content: ' ';
-    background: var(--text-white);
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    left: -35px;
-    width: 24px;
-    height: 24px;
-    z-index: 4;
-    top: 54%;
+    .pt_48 {
+        padding-top: 48px !important;
+    }
+    .mt_25 {
+        margin-top: 111px !important;
+    }
 }
