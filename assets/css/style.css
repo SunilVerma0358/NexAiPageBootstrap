@@ -65,14 +65,16 @@
 }
 
 .back {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .back_top_btn {
     position: fixed;
-    padding: 6px;
     bottom: 10px;
     right: 10px;
     color: var(--text-white);
@@ -204,7 +206,7 @@
 }
 
 .h_270 {
-    height: 200px
+    height: 60px
 }
 
 .h_150 {
@@ -219,7 +221,7 @@
 }
 
 .pt_20 {
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .pt_30 {
@@ -442,6 +444,10 @@
 }
 
 .AndmoreCardPadding3 {
+    padding: 55px 30px;
+}
+
+.AndmoreCardPadding4 {
     padding: 55px 30px;
 }
 
@@ -925,6 +931,9 @@ ul.roadmap>li:before {
     .ps_38 {
         padding-left: 38px;
     }
+    .pt_20 {
+        padding-top: 20px;
+    }
     .lh_75 {
         line-height: 60px;
     }
@@ -953,8 +962,11 @@ ul.roadmap>li:before {
     .AndmoreCardPadding2 {
         padding: 72px 43px;
     }
+    .AndmoreCardPadding4 {
+        padding: 55px 43px;
+    }
     .max_w_900 {
-        max-width: 900px;
+        max-width: 780px;
     }
 }
 
@@ -968,11 +980,17 @@ ul.roadmap>li:before {
     .max_w_blockChain {
         max-width: 1536px;
     }
+    .max_w_900 {
+        max-width: 900px;
+    }
     .vh_100 {
         height: 100vh;
     }
     .AndmoreCardPadding3 {
         padding: 55px 43px;
+    }
+    .AndmoreCardPadding4 {
+        padding: 72px 43px;
     }
     .pt_48 {
         padding-top: 48px !important;
